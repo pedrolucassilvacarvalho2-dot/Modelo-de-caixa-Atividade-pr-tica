@@ -35,7 +35,7 @@ header {
   background-color: #4a2b20;
   background-image:
     linear-gradient(rgba(50, 25, 15, .6), rgba(50, 25, 15, .6)),
-    url(images/croissants_banner.jpg);
+    url(croissants_banner.jpg);
   background-position: center;
   background-size: cover;
   box-shadow: 0 3px 8px #4a2b2040;
@@ -55,11 +55,14 @@ nav ul {
   margin: 0;
   padding: 10px;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 nav li {
-  display: inline;
-  margin: 0 10px;
+  margin: 0;
 }
 
 nav a {
@@ -148,13 +151,32 @@ aside {
   margin: 1em auto 0;
   padding: 22px 16px 25px 45px;
   background-color: #fff8e8;
-  background-image: url(images/scallop.png);
+  background-image: url(scallop.png);
 
   border: 1px solid #edd9b8;
   border-radius: 25px;
   text-align: center;
   box-shadow: 0 3px 10px #4a2b2015;
-  background-image: url(images/scallop.png);
+}
+
+.info-section {
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 24px;
+  background-color: #fffdf9;
+  border: 1px solid #eaddc4;
+  border-radius: 25px;
+  box-shadow: 0 3px 10px #4a2b2015;
+}
+
+.info-section h2 {
+  margin-bottom: 12px;
+}
+
+.info-section p {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 aside h2 {
@@ -206,7 +228,14 @@ footer p {
   }
 
   nav li {
-    margin: 0 5px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 4px 0;
   }
 
   main {
@@ -222,5 +251,11 @@ footer p {
   aside {
     width: 92%;
     margin: 20px auto 0;
+    padding: 20px 12px;
+  }
+
+  .info-section {
+    width: 92%;
+    padding: 20px 14px;
   }
 }

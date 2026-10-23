@@ -11,40 +11,53 @@
 <title>Black Goose Bakery</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
-<style>
-@import url(bakery-styles.css);
-</style>
+<link rel="stylesheet" href="bakery-styles.css">
 </head>
 
 <body>
 
 <header>
-  <nav>
+  <nav aria-label="Navegação principal">
     <ul>
       <li><a href="#cardapio">Cardápio</a></li>
       <li><a href="#novidades">Novidades</a></li>
-      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#sobre">Sobre nós</a></li>
       <li><a href="#horarios">Horários</a></li>
     </ul>
   </nav>
-  <h1><img src="images/bgb_logo.png" alt="Black Goose Bakery"></h1>
+  <h1><img src="bgb_logo.png" alt="Black Goose Bakery"></h1>
   <p>As delícias de padaria que você adora no Black Goose Bistro... agora também para levar!</p>
 </header>
 
-<main>
-  <h2 id="cardapio">Saindo do forno</h2>
+<main id="cardapio">
+  <h2>Saindo do forno</h2>
   <h3>Pães</h3>
-  <p><img src="images/bread.png" alt="pão redondo sobre uma tábua de corte"> Nossos pães são feitos diariamente com farinha integral da mais alta qualidade, água, sal e fermento biológico ou natural. Simples e naturais, e nunca levam conservantes. A paciência é a chave para alcançar o ponto certo de fermentação e assar cada pão à perfeição. Disponíveis nas versões integral, fermentação natural, de azeitona, centeio clássico e batata com cebola.</p>
-  <p class="more"><a href="">Saiba mais sobre como fazemos nossos pães...</a></p>
+  <p><img src="bread.png" alt="pão redondo sobre uma tábua de corte"> Nossos pães são feitos diariamente com farinha integral da mais alta qualidade, água, sal e fermento biológico ou natural. Simples e naturais, e nunca levam conservantes. A paciência é a chave para alcançar o ponto certo de fermentação e assar cada pão à perfeição. Disponíveis nas versões integral, fermentação natural, de azeitona, centeio clássico e batata com cebola.</p>
+  <p class="more"><a href="#sobre-paes">Saiba mais sobre como fazemos nossos pães...</a></p>
 
   <h3 id="novidades">Muffins</h3>
-  <p><img src="images/muffin.png" alt="um muffin com gotas de chocolate"> Todos os dias oferecemos uma grande variedade de muffins, incluindo mirtilo, frutas vermelhas, farelo de trigo, milho, limão com papoula e chocolate. Nossos muffins são feitos do zero todos os dias. Venha conhecer nossos sabores da estação!</p>
-  <p class="more"><a href="">Saiba mais sobre como fazemos nossos muffins...</a></p>
+  <p><img src="muffin.png" alt="um muffin com gotas de chocolate"> Todos os dias oferecemos uma grande variedade de muffins, incluindo mirtilo, frutas vermelhas, farelo de trigo, milho, limão com papoula e chocolate. Nossos muffins são feitos do zero todos os dias. Venha conhecer nossos sabores da estação!</p>
+  <p class="more"><a href="#sobre-muffins">Saiba mais sobre como fazemos nossos muffins...</a></p>
 </main>
 
-<aside>
+<section id="sobre" class="info-section">
+  <h2>Sobre nós</h2>
+  <p>A Black Goose Bakery nasceu para levar os sabores artesanais do Black Goose Bistro para o seu dia a dia. Preparamos fornadas frescas todas as manhãs com ingredientes selecionados e receitas tradicionais.</p>
+</section>
+
+<section id="sobre-paes" class="info-section">
+  <h2>Como fazemos nossos pães</h2>
+  <p>Nossos pães passam por fermentação controlada para desenvolver sabor e textura. Depois de sovados e modelados, são assados em alta temperatura para garantir casca crocante e miolo macio.</p>
+</section>
+
+<section id="sobre-muffins" class="info-section">
+  <h2>Como fazemos nossos muffins</h2>
+  <p>Os muffins são preparados diariamente com massa fresca e combinações da estação. Assim, cada fornada mantém aroma, maciez e sabor em todos os pedaços.</p>
+</section>
+
+<aside id="horarios">
   <h2>Horários</h2>
-  <img class="award" src="images/award.png" alt="Selo de qualidade da Black Goose Bakery">
+  <img class="award" src="award.png" alt="Selo de qualidade da Black Goose Bakery">
   <p><span class="day">Segunda:</span> 5h às 15h</p>
   <p><span class="day">Terça:</span> 5h às 15h</p>
   <p><span class="day">Quarta:</span> 5h às 15h</p>
@@ -53,11 +66,9 @@
   <p><span class="day">Sábado:</span> 6h às 16h</p>
   <p><span class="day">Domingo:</span> 6h às 16h</p>
 </aside>
-
 <footer>
-  <p id="horarios">Todo o conteúdo &copy; 2024, Black Goose Bistro.</p>
+  <p>Todo o conteúdo &copy; 2024, Black Goose Bistro.</p>
 </footer>
 
-<script src="bakery-interactions.js" defer></script>
 </body>
 </html>
