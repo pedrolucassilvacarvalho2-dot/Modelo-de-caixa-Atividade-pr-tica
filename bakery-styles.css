@@ -35,7 +35,7 @@ header {
   background-color: #4a2b20;
   background-image:
     linear-gradient(rgba(50, 25, 15, .6), rgba(50, 25, 15, .6)),
-    url(images/croissants_banner.jpg);
+    url(croissants_banner.jpg);
   background-position: center;
   background-size: cover;
   box-shadow: 0 3px 8px #4a2b2040;
@@ -148,13 +148,12 @@ aside {
   margin: 1em auto 0;
   padding: 22px 16px 25px 45px;
   background-color: #fff8e8;
-  background-image: url(images/scallop.png);
+  background-image: url(scallop.png);
 
   border: 1px solid #edd9b8;
   border-radius: 25px;
   text-align: center;
   box-shadow: 0 3px 10px #4a2b2015;
-  background-image: url(images/scallop.png);
 }
 
 aside h2 {
